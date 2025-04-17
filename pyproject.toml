@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offcloud_api"
+version = "0.1.0"
+description = "Python client for the Offcloud API"
+readme = "README.md"
+authors = [
+  { name = "apacalpa", email = "me@apacalpa.com" }
+]
+dependencies = [
+  "requests>=2.0"
+]
