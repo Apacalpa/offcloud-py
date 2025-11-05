@@ -90,7 +90,7 @@ class OffcloudAPI:
         resp = self._request("get", url)
         return resp.json()
 
-    def list_cloud(self, request_id: str) -> str:
+    def list_cloud(self, request_id: str) -> dict:
         url = f"{self.base_url}/cloud/list/{request_id}"
         resp = self._request("get", url)
         return resp.json()
